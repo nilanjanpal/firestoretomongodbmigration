@@ -16,12 +16,7 @@ module.exports.getUserDetails = (db) => {
                             dateofBirth: utilities.toDateTime(element._fieldsProto.DateOfBirth.timestampValue.seconds)
                         }
                         userDetails.push(userDetail);
-                        // console.log(element._fieldsProto);
                     });
-                    // console.log(userDetails);
-                    // utilities.writeJson('json_data/user.json',userDetails);
-                    // mongo.insertData('expensetracker', 'UserDetail', userDetails);
-                    // console.log(result.docs[0]._fieldsProto.EmailId.stringValue);
                     resolve(userDetails);
                 }
             );

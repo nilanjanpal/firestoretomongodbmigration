@@ -19,7 +19,7 @@ module.exports.getExpenseDetail = (db) => {
                         expenseDetails.push(expense);
                     });
                     // console.log(expenseDetail);
-                    // utilities.writeJson('json_data/expense.json',expenseDetails);
+                    utilities.writeJson('json_data/expense.json',expenseDetails);
                     resolve(expenseDetails);
                 }
             );

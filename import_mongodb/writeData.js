@@ -13,7 +13,7 @@ module.exports.insertData = (databaseName, collectionName, data) => {
         const collection = db.collection(collectionName);
         collection.insertMany(data).then(
             (result) => {
-                console.log(result);
+                // console.log(result);
                 client.close();
             }
         );
